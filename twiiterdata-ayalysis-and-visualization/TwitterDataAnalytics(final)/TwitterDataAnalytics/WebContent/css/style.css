@@ -1,0 +1,48 @@
+
+body , .main{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	background-color:#000;
+	color: #FFF;
+	overflow:auto;
+	margin:0;
+}
+
+.head{
+	width:500px;
+	display:inline-block;
+	margin-left:100px;
+}
+.header h1{
+	color: #FFF;
+	font-family: "sans-serif";
+	font-size: 18px;
+	font-wieght:normal;
+	padding: 10px 10px 0 10px;
+}
+.param{
+	margin:20px auto;
+	overflow : auto;
+	width:1400px;	
+}
+.param ul{
+	list-style:none;
+	overflow : auto;
+}
+.paramComponent{
+	float:left;
+	margin: 0 50px;
+}
+.maps{
+	 margin:10px auto;
+}
+
+.mapsContainer{
+	position: relative; 
+	width: 1200px; 
+	height: 600px; 
+	border: 1px solid teal;
+	margin:10px auto;
+}

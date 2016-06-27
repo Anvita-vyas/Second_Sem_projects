@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/twitter_data" auth="Container" type="javax.sql.DataSource"
+		maxActive="500" maxIdle="300" maxWait="10000" username="twitterdb"
+		password="twitterdb" driverClassName="com.mysql.jdbc.Driver"		 
+		 url="jdbc:mysql://ec2-52-77-226-177.ap-southeast-1.compute.amazonaws.com:3306/twitter_data" />
+		 <!-- url="jdbc:mysql://twitterdb.cypjrfmbtyju.ap-southeast-1.rds.amazonaws.com:3306/twitter_data"  
+		 url="jdbc:mysql://localhost:3307/twitter_data"-->
+		    
+</Context>

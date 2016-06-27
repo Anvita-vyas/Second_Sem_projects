@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.multipart.saveDir" value="javax.servlet.context.tempdir" />
+	<package name="default" namespace="/" extends="json-default">
+		<action name="getRetweetDtls" class="org.iiitb.twitteranalytics.action.ShowMapAction" method="getRetweetsDtls">
+			 <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result type="json" name="success"></result>
+		</action>
+		<action name="getTweetDtls" class="org.iiitb.twitteranalytics.action.ShowMapAction" method="getTweetsDtls">
+			 <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result type="json" name="success"></result>
+		</action>
+		<action name="Twitter" class="org.iiitb.twitteranalytics.dao.impl.Twitter">
+		<result name="success">/success.jsp</result>
+		</action> 
+	</package>
+</struts>
